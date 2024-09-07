@@ -3,134 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            background-color: black;
-            color: green;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        #header, #footer {
-            text-align: center;
-            margin: 20px;
-        }
-
-        h1, h2, h3 {
-            color: green;
-            text-shadow: 0 0 10px green;
-        }
-
-        p, ul {
-            margin-left: 20px;
-        }
-
-        a {
-            color: green;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .skill-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .skill-list li {
-            margin-bottom: 5px;
-        }
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        .social-media img {
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rikhil Kakani | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <h1>My Portfolio</h1>
-    </div> 
 
-    <img src="img.jpg" alt="My Image">
-    
-    <div id="My Experience">
-        <h2><b>My Experience</b></h2>
-        <p>I had Experience in Working Blockchain Through Cyber Physical Systems</p>
-        <p>I have 2 years of experience in Network Analysis</p>
-        <p>I also have experience as a security analyst at Google</p>
-        <h3>Skills:</h3>
-        <ul class="skill-list">
-            <li>Coding languages: C, JAVA, Python, JavaScript, HTML</li>
-            <li>Frameworks/Platforms: Spring Boot, Node.js, ReactJS, Express</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <li>Tools & Technologies: Git, Jenkins, Docker, Kubernetes, AWS (EC2, RDS), Azure</li>
-        </ul>
-    </div>
-    
-    <div id="My Projects">
-        <h2><b>My Projects</b></h2>
-        <p>I did a project on finding Virtual Band Gap Experiment:</p>
-        <p>Which is a virtual lab to find the band gap of the Experiment</p>
-        <p>I have done it using basic HTML and JavaScript languages</p>
-        <p>Link: <a href="https://band-gap.vercel.app/">Energy Band Gap Simulator</a></p>
-    </div>
-    
-    <div id="My Education">
-        <h2><b>My Education</b></h2>
-        <p><b><i>Schooling:</i></b></p>
-        <p>I did my schooling at Sri Chaitanya EM School</p>
-        <p>Address:<br>
-        Sri Chaitanya EM School,<br>
-        Opp. RR Super Market,<br>
-        Sullurpet,<br>
-        Nellore Dist,<br>
-        Andhra Pradesh, pincode - 524121</p>
-        
-        <p><b><i>Higher Schooling:</i></b></p>
-        <p>I completed my Higher Schooling at Narayana Junior College</p>
-        <p>Address:<br>
-        Pidathapolur,<br>
-        Muthukur Mandal,<br>
-        Nellore,<br>
-        Andhra Pradesh 524316</p>
-    </div>
-
-    <div id="footer">
-        <h5><u>Contact Details:</u></h5>
-        <p>Name: Kakani Rihkil</p>
-        <p>Email: kakanirikhil7@gmail.com</p>
-        <p>Phone No: <u>+91 6300871682</u></p>
-        <div class="contact-info">
-            <p><u><b>My Social Media Handles:</b></u></p>
-            <p class="social-media">
-                <a href="https://www.instagram.com/kakanirikhil">
-                    <img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" height="30" width="30" alt="Instagram">Instagram
-                </a>
-            </p>
-            <p class="social-media">
-                <img src="https://static-00.iconduck.com/assets.00/whatsapp-icon-509x512-c9csi2fs.png" height="20" width="20" alt="WhatsApp"><u>+91 6300871682</u>
-            </p>
-            <p class="social-media">
-                <a href="https://github.com/Rikhil777">
-                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" height="30" width="30" alt="GitHub">GitHub
-                </a>
-            </p>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Rikhil Kakani</h1>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h2>Hi, I'm Rikhil Kakani</h2>
+            <p>Student | Tech Enthusiast | CTF Solver</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a B.Tech 2nd-year student at Shiv Nadar University, passionate about learning new technologies, reading, and solving CTF problems. I have learned C, C++, Java, Python. I am certified in Offensive Security, Defensive Security form TryHack me, and Foundations of Cyber Security from Google.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>C, C++, Java, Python</li>
+                <li>Cybersecurity: Offensive, Defensive</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Simple Calculator</h3>
+                <p>A basic calculator in C performing arithmetic operations.</p>
+            </div>
+
+            <div class="project">
+                <h3>Aurora Voice Assistant</h3>
+                <p>A Python-based voice assistant for tasks like web searches and file handling.</p>
+            </div>
+
+            <div class="project">
+                <h3>Virtual Band Gap Experiment</h3>
+                <p>A web experiment simulating the band gap in materials using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:kakanirikhil7@gmail.com">kakanirikhil7@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rikhil-kakani-1a139a212/" target="_blank">LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/Rikhil777" target="_blank">GitHub</a></p>
+            <p>Mobile: 6300871682</p>
+        </div>
+    </section>
+
 </body>
 </html>
